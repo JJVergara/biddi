@@ -11,7 +11,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
           <div className="flex items-center gap-3">
-            <span className="text-xl font-bold text-white">Body Cart</span>
+            <span className="text-xl font-bold text-white">BodyCart</span>
           </div>
 
           {/* Navigation */}
@@ -83,7 +83,7 @@ export function Footer() {
         {/* Bottom bar */}
         <ScrollReveal delay={0.1}>
           <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
-            <p>&copy; {new Date().getFullYear()} Body Cart. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} BodyCart. Todos los derechos reservados.</p>
             <p>Hecho para un internet más seguro</p>
           </div>
         </ScrollReveal>

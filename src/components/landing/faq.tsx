@@ -5,39 +5,39 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 
 const faqs = [
   {
-    question: "¿Cómo me protege Body Cart?",
+    question: "¿Cómo me protege BodyCart?",
     answer:
-      "Body Cart utiliza modelos avanzados de IA entrenados con miles de patrones de estafas conocidas, intentos de phishing y sitios web fraudulentos. Analiza continuamente las páginas que visitas en tiempo real, buscando elementos sospechosos como formularios de pago falsos, precios engañosos, señales de alerta de vendedores en marketplaces y dominios maliciosos conocidos. Cuando se detecta una amenaza, recibes una notificación instantánea con detalles sobre el riesgo.",
+      "BodyCart utiliza modelos avanzados de IA entrenados con miles de patrones de estafas conocidas, intentos de phishing y sitios web fraudulentos. Analiza continuamente las páginas que visitas en tiempo real, buscando elementos sospechosos como formularios de pago falsos, precios engañosos, señales de alerta de vendedores en marketplaces y dominios maliciosos conocidos. Cuando se detecta una amenaza, recibes una notificación instantánea con detalles sobre el riesgo.",
   },
   {
-    question: "¿Están seguros mis datos con Body Cart?",
+    question: "¿Están seguros mis datos con BodyCart?",
     answer:
-      "Absolutamente. Body Cart está diseñado con la privacidad como prioridad principal. Todo el análisis ocurre localmente en tu navegador - tus datos de navegación nunca salen de tu dispositivo. No recopilamos, almacenamos ni transmitimos ninguna información personal, historial de navegación o contenido de las páginas que visitas. La extensión solo necesita permisos mínimos para funcionar.",
+      "Absolutamente. BodyCart está diseñado con la privacidad como prioridad principal. Todo el análisis ocurre localmente en tu navegador - tus datos de navegación nunca salen de tu dispositivo. No recopilamos, almacenamos ni transmitimos ninguna información personal, historial de navegación o contenido de las páginas que visitas. La extensión solo necesita permisos mínimos para funcionar.",
   },
   {
-    question: "¿Qué tipos de estafas puede detectar Body Cart?",
+    question: "¿Qué tipos de estafas puede detectar BodyCart?",
     answer:
-      "Body Cart puede identificar una amplia gama de amenazas en línea incluyendo: estafas en Facebook Marketplace (vendedores falsos, precios demasiado buenos para ser verdad, cuentas sospechosas), sitios web de phishing que intentan robar credenciales, sitios de comercio electrónico falsos, listados de productos falsificados, fraude en formularios de pago y dominios maliciosos conocidos. Nuestros modelos de IA se actualizan continuamente para detectar nuevos patrones de estafa.",
+      "BodyCart puede identificar una amplia gama de amenazas en línea incluyendo: estafas en Facebook Marketplace (vendedores falsos, precios demasiado buenos para ser verdad, cuentas sospechosas), sitios web de phishing que intentan robar credenciales, sitios de comercio electrónico falsos, listados de productos falsificados, fraude en formularios de pago y dominios maliciosos conocidos. Nuestros modelos de IA se actualizan continuamente para detectar nuevos patrones de estafa.",
   },
   {
     question: "¿Cómo instalo la extensión?",
     answer:
-      "Instalar Body Cart es simple: 1) Descarga el archivo ZIP desde esta página, 2) Extrae/descomprime el archivo en una carpeta de tu computador, 3) Abre Chrome y ve a chrome://extensions/, 4) Activa el 'Modo desarrollador' en la esquina superior derecha, 5) Haz clic en 'Cargar descomprimida' y selecciona la carpeta extraída. ¡Eso es todo! Body Cart ahora te protegerá mientras navegas.",
+      "Instalar BodyCart es simple: 1) Descarga el archivo ZIP desde esta página, 2) Extrae/descomprime el archivo en una carpeta de tu computador, 3) Abre Chrome y ve a chrome://extensions/, 4) Activa el 'Modo desarrollador' en la esquina superior derecha, 5) Haz clic en 'Cargar descomprimida' y selecciona la carpeta extraída. ¡Eso es todo! BodyCart ahora te protegerá mientras navegas.",
   },
   {
-    question: "¿Body Cart es realmente gratis?",
+    question: "¿BodyCart es realmente gratis?",
     answer:
-      "Sí, Body Cart es completamente gratis sin costos ocultos, niveles premium ni compras dentro de la aplicación. Creemos que todos merecen protección contra estafas en línea. La extensión se desarrolla como un proyecto de código abierto enfocado en hacer internet más seguro para todos.",
+      "Sí, BodyCart es completamente gratis sin costos ocultos, niveles premium ni compras dentro de la aplicación. Creemos que todos merecen protección contra estafas en línea. La extensión se desarrolla como un proyecto de código abierto enfocado en hacer internet más seguro para todos.",
   },
   {
-    question: "¿Body Cart ralentiza mi navegador?",
+    question: "¿BodyCart ralentiza mi navegador?",
     answer:
-      "No. Body Cart está optimizado para el rendimiento y funciona eficientemente en segundo plano. El análisis de IA es ligero y ocurre de forma asíncrona, por lo que no afectará la velocidad de navegación ni los tiempos de carga de páginas. La mayoría de los usuarios no notan ningún impacto en el rendimiento.",
+      "No. BodyCart está optimizado para el rendimiento y funciona eficientemente en segundo plano. El análisis de IA es ligero y ocurre de forma asíncrona, por lo que no afectará la velocidad de navegación ni los tiempos de carga de páginas. La mayoría de los usuarios no notan ningún impacto en el rendimiento.",
   },
   {
-    question: "¿Qué navegadores soporta Body Cart?",
+    question: "¿Qué navegadores soporta BodyCart?",
     answer:
-      "Actualmente, Body Cart está disponible como extensión de Chrome, que también funciona en navegadores basados en Chromium como Microsoft Edge, Brave, Opera y Vivaldi. Las versiones para Firefox y Safari se están considerando para futuras versiones según la demanda de los usuarios.",
+      "Actualmente, BodyCart está disponible como extensión de Chrome, que también funciona en navegadores basados en Chromium como Microsoft Edge, Brave, Opera y Vivaldi. Las versiones para Firefox y Safari se están considerando para futuras versiones según la demanda de los usuarios.",
   },
 ];
 
@@ -60,7 +60,7 @@ export function FAQ() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60">
-              Todo lo que necesitas saber sobre Body Cart
+              Todo lo que necesitas saber sobre BodyCart
             </p>
           </ScrollReveal>
         </div>

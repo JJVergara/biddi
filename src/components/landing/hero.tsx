@@ -72,7 +72,7 @@ export function Hero() {
       {/* Content */}
       <div ref={contentRef} className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 font-heading">
-          Body Cart
+          BodyCart
         </h1>
 
         <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-6 font-heading">
@@ -123,7 +123,7 @@ export function Hero() {
               </svg>
             </button>
 
-            <h3 className="text-2xl font-semibold text-black mb-2">Instalar Body Cart</h3>
+            <h3 className="text-2xl font-semibold text-black mb-2">Instalar BodyCart</h3>
             <p className="text-neutral-500 mb-8">Sigue estos pasos para estar protegido</p>
 
             <div className="space-y-6">
@@ -208,7 +208,7 @@ export function Hero() {
 
             <div className="mt-8 pt-6 border-t border-neutral-200">
               <p className="text-center text-neutral-500 text-sm">
-                ¡Listo! Body Cart ahora te está protegiendo.
+                ¡Listo! BodyCart ahora te está protegiendo.
               </p>
             </div>
           </div>

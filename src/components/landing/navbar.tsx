@@ -9,7 +9,7 @@ export function Navbar() {
       logo={
         <Image
           src="/logo_cropped_white.png"
-          alt="Body Cart"
+          alt="BodyCart"
           width={32}
           height={32}
           className="h-8 w-auto"

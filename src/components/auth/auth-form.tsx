@@ -70,7 +70,7 @@ export function AuthForm() {
           {mode === 'signin' ? 'Welcome Back' : 'Create Account'}
         </h2>
         <p className="text-neutral-500 text-center mb-8">
-          {mode === 'signin' ? 'Sign in to continue to Body Cart' : 'Sign up to get started with Body Cart'}
+          {mode === 'signin' ? 'Sign in to continue to BodyCart' : 'Sign up to get started with BodyCart'}
         </p>
 
         {/* Google OAuth Button */}

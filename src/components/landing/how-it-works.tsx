@@ -13,7 +13,7 @@ const steps = [
     number: "01",
     title: "Descarga la Extensión",
     description:
-      "Haz clic en el botón de descarga para obtener el archivo ZIP de Body Cart. Es completamente gratis sin costos ocultos.",
+      "Haz clic en el botón de descarga para obtener el archivo ZIP de BodyCart. Es completamente gratis sin costos ocultos.",
     icon: <DownloadSimple size={40} weight="bold" />,
   },
   {
@@ -27,7 +27,7 @@ const steps = [
     number: "03",
     title: "Navega Seguro",
     description:
-      "¡Eso es todo! Body Cart ahora funciona en segundo plano, analizando páginas y alertándote de amenazas potenciales automáticamente.",
+      "¡Eso es todo! BodyCart ahora funciona en segundo plano, analizando páginas y alertándote de amenazas potenciales automáticamente.",
     icon: <ShieldCheckered size={40} weight="bold" />,
   },
 ];

@@ -20,7 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Body Cart - Tu Guardaespaldas Digital para Compras en Línea",
+  title: "BodyCart - Tu Guardaespaldas Digital para Compras en Línea",
   description: "Extensión de Chrome potenciada por IA que te protege de estafas, intentos de phishing y sitios web sospechosos en tiempo real.",
 };
 

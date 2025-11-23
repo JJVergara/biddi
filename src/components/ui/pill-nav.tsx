@@ -29,7 +29,7 @@ export interface PillNavProps {
 
 const PillNav: React.FC<PillNavProps> = ({
   logo,
-  logoText = 'Body Cart',
+  logoText = 'BodyCart',
   logoAlt = 'Logo',
   items,
   activeHref,

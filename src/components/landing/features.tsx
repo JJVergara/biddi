@@ -63,7 +63,7 @@ export function Features() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Body Cart usa IA de última generación para mantenerte seguro de amenazas
+              BodyCart usa IA de última generación para mantenerte seguro de amenazas
               en línea mientras compras
             </p>
           </ScrollReveal>

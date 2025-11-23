@@ -20,7 +20,7 @@ export default async function LoginPage() {
         <header className="w-full px-6 py-6">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-              <span className="text-2xl font-bold text-black">Body Cart</span>
+              <span className="text-2xl font-bold text-black">BodyCart</span>
             </Link>
 
             <Link
@@ -40,7 +40,7 @@ export default async function LoginPage() {
         {/* Footer */}
         <footer className="w-full px-6 py-6">
           <div className="max-w-7xl mx-auto text-center text-neutral-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} Body Cart. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} BodyCart. All rights reserved.</p>
           </div>
         </footer>
       </div>

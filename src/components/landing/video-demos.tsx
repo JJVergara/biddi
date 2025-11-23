@@ -5,20 +5,20 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 const videos = [
   {
     id: "placeholder-1",
-    title: "Primeros Pasos con Body Cart",
-    description: "Aprende cómo instalar y configurar Body Cart en menos de un minuto.",
+    title: "Primeros Pasos con BodyCart",
+    description: "Aprende cómo instalar y configurar BodyCart en menos de un minuto.",
     thumbnail: null,
   },
   {
     id: "placeholder-2",
     title: "Detectando Estafas en Marketplace",
-    description: "Mira cómo Body Cart identifica publicaciones sospechosas en Facebook Marketplace.",
+    description: "Mira cómo BodyCart identifica publicaciones sospechosas en Facebook Marketplace.",
     thumbnail: null,
   },
   {
     id: "placeholder-3",
     title: "Protección en Acción",
-    description: "Observa cómo Body Cart te protege de intentos de phishing en tiempo real.",
+    description: "Observa cómo BodyCart te protege de intentos de phishing en tiempo real.",
     thumbnail: null,
   },
 ];
@@ -36,7 +36,7 @@ export function VideoDemos() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Observa cómo Body Cart te protege mientras compras en línea
+              Observa cómo BodyCart te protege mientras compras en línea
             </p>
           </ScrollReveal>
         </div>
