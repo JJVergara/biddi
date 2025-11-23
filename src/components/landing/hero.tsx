@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ColorBends from "@/components/ui/color-bends";
 
 export function Hero() {
   const [showInstructions, setShowInstructions] = useState(false);
@@ -31,22 +32,21 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-teal-950 to-slate-900">
-        {/* Animated gradient orbs */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-teal-400/15 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-600/10 rounded-full blur-3xl" />
-
-        {/* Grid pattern overlay */}
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `linear-gradient(rgba(20, 184, 166, 0.3) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(20, 184, 166, 0.3) 1px, transparent 1px)`,
-            backgroundSize: "50px 50px",
-          }}
-        />
+      <div className="absolute inset-0 bg-slate-900">
+      <ColorBends
+        colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+        rotation={30}
+        speed={0.3}
+        scale={1.2}
+        frequency={1.4}
+        warpStrength={1.2}
+        mouseInfluence={0.8}
+        parallax={0.6}
+        noise={0.08}
+        transparent
+      />
+        {/* Overlay for content readability */}
+        <div className="absolute inset-0 bg-slate-900/40" />
       </div>
 
       {/* Content */}
