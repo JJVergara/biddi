@@ -20,8 +20,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Body Cart - Your Digital Bodyguard for Online Shopping",
-  description: "AI-powered Chrome extension that protects you from scams, phishing attempts, and suspicious websites in real-time.",
+  title: "Body Cart - Tu Guardaespaldas Digital para Compras en Línea",
+  description: "Extensión de Chrome potenciada por IA que te protege de estafas, intentos de phishing y sitios web sospechosos en tiempo real.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >

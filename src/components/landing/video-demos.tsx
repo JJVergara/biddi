@@ -5,20 +5,20 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 const videos = [
   {
     id: "placeholder-1",
-    title: "Getting Started with Body Cart",
-    description: "Learn how to install and set up Body Cart in less than a minute.",
+    title: "Primeros Pasos con Body Cart",
+    description: "Aprende cómo instalar y configurar Body Cart en menos de un minuto.",
     thumbnail: null,
   },
   {
     id: "placeholder-2",
-    title: "Detecting Marketplace Scams",
-    description: "See how Body Cart identifies suspicious listings on Facebook Marketplace.",
+    title: "Detectando Estafas en Marketplace",
+    description: "Mira cómo Body Cart identifica publicaciones sospechosas en Facebook Marketplace.",
     thumbnail: null,
   },
   {
     id: "placeholder-3",
-    title: "Protection in Action",
-    description: "Watch Body Cart protect you from phishing attempts in real-time.",
+    title: "Protección en Acción",
+    description: "Observa cómo Body Cart te protege de intentos de phishing en tiempo real.",
     thumbnail: null,
   },
 ];
@@ -31,12 +31,12 @@ export function VideoDemos() {
         <div className="text-center mb-16">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              See It In Action
+              Míralo en Acción
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Watch how Body Cart protects you while shopping online
+              Observa cómo Body Cart te protege mientras compras en línea
             </p>
           </ScrollReveal>
         </div>
@@ -61,7 +61,7 @@ export function VideoDemos() {
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <p className="text-white/40 text-sm">Video coming soon</p>
+                  <p className="text-white/40 text-sm">Video próximamente</p>
                 </div>
 
                 {/* Gradient overlay on hover */}
@@ -85,7 +85,7 @@ export function VideoDemos() {
         <ScrollReveal delay={0.3}>
           <div className="mt-12 text-center">
             <p className="text-white/60 mb-4">
-              Subscribe to our channel for more tutorials and updates
+              Suscríbete a nuestro canal para más tutoriales y actualizaciones
             </p>
             <a
               href="https://youtube.com"
@@ -96,7 +96,7 @@ export function VideoDemos() {
               <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
-              YouTube Channel
+              Canal de YouTube
             </a>
           </div>
         </ScrollReveal>

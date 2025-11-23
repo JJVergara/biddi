@@ -20,13 +20,13 @@ export function Footer() {
               href="#features"
               className="text-white/60 hover:text-white transition-colors"
             >
-              Features
+              Características
             </a>
             <a
               href="#how-it-works"
               className="text-white/60 hover:text-white transition-colors"
             >
-              How It Works
+              Cómo Funciona
             </a>
             <a
               href="#demos"
@@ -38,13 +38,13 @@ export function Footer() {
               href="#faq"
               className="text-white/60 hover:text-white transition-colors"
             >
-              FAQ
+              Preguntas
             </a>
             <Link
               href="/login"
               className="text-white/60 hover:text-white transition-colors"
             >
-              Sign In
+              Iniciar Sesión
             </Link>
           </nav>
 
@@ -83,8 +83,8 @@ export function Footer() {
         {/* Bottom bar */}
         <ScrollReveal delay={0.1}>
           <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
-            <p>&copy; {new Date().getFullYear()} Body Cart. All rights reserved.</p>
-            <p>Made for a safer internet</p>
+            <p>&copy; {new Date().getFullYear()} Body Cart. Todos los derechos reservados.</p>
+            <p>Hecho para un internet más seguro</p>
           </div>
         </ScrollReveal>
       </div>

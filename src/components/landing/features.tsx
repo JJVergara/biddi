@@ -14,9 +14,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Marketplace Scam Detection",
+    title: "Detección de Estafas en Marketplace",
     description:
-      "Real-time analysis of Facebook Marketplace listings to identify potential scams, fake sellers, and suspicious pricing patterns.",
+      "Análisis en tiempo real de publicaciones en Facebook Marketplace para identificar posibles estafas, vendedores falsos y patrones de precios sospechosos.",
   },
   {
     icon: (
@@ -29,9 +29,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Suspicious Website Alerts",
+    title: "Alertas de Sitios Sospechosos",
     description:
-      "Instant warnings when you visit potentially dangerous websites, including fake storefronts and counterfeit e-commerce sites.",
+      "Advertencias instantáneas cuando visitas sitios web potencialmente peligrosos, incluyendo tiendas falsas y sitios de comercio electrónico fraudulentos.",
   },
   {
     icon: (
@@ -44,9 +44,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Phishing Protection",
+    title: "Protección contra Phishing",
     description:
-      "Advanced AI detection of phishing attempts in emails, messages, and websites trying to steal your personal information.",
+      "Detección avanzada con IA de intentos de phishing en correos, mensajes y sitios web que intentan robar tu información personal.",
   },
   {
     icon: (
@@ -59,9 +59,9 @@ const features = [
         />
       </svg>
     ),
-    title: "AI-Powered Analysis",
+    title: "Análisis con IA",
     description:
-      "Machine learning models trained on thousands of scam patterns provide intelligent, context-aware protection.",
+      "Modelos de machine learning entrenados con miles de patrones de estafa proporcionan protección inteligente y contextual.",
   },
   {
     icon: (
@@ -74,9 +74,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Safe Checkout Verification",
+    title: "Verificación de Pago Seguro",
     description:
-      "Verifies the legitimacy of checkout pages and payment forms before you enter sensitive financial information.",
+      "Verifica la legitimidad de las páginas de pago y formularios antes de que ingreses información financiera sensible.",
   },
   {
     icon: (
@@ -89,9 +89,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Instant Threat Notifications",
+    title: "Notificaciones Instantáneas",
     description:
-      "Get immediate alerts when potential threats are detected, with clear explanations and recommended actions.",
+      "Recibe alertas inmediatas cuando se detectan amenazas potenciales, con explicaciones claras y acciones recomendadas.",
   },
 ];
 
@@ -103,13 +103,13 @@ export function Features() {
         <div className="text-center mb-16">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              Powerful Protection
+              Protección Poderosa
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Body Cart uses cutting-edge AI to keep you safe from online threats while
-              you shop
+              Body Cart usa IA de última generación para mantenerte seguro de amenazas
+              en línea mientras compras
             </p>
           </ScrollReveal>
         </div>

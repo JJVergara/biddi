@@ -16,10 +16,10 @@ export function Navbar() {
         />
       }
       items={[
-        { label: 'Features', href: '#features' },
-        { label: 'How It Works', href: '#how-it-works' },
+        { label: 'Características', href: '#features' },
+        { label: 'Cómo Funciona', href: '#how-it-works' },
         { label: 'Demos', href: '#demos' },
-        { label: 'FAQ', href: '#faq' },
+        { label: 'Preguntas', href: '#faq' },
       ]}
       baseColor="#ffffff"
       pillColor="#000000"

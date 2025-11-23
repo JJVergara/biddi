@@ -5,9 +5,9 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 const steps = [
   {
     number: "01",
-    title: "Download the Extension",
+    title: "Descarga la Extensión",
     description:
-      "Click the download button to get the Body Cart extension ZIP file. It's completely free with no hidden costs.",
+      "Haz clic en el botón de descarga para obtener el archivo ZIP de Body Cart. Es completamente gratis sin costos ocultos.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -21,9 +21,9 @@ const steps = [
   },
   {
     number: "02",
-    title: "Install in Chrome",
+    title: "Instala en Chrome",
     description:
-      "Extract the ZIP, go to chrome://extensions/, enable Developer Mode, and load the unpacked extension folder.",
+      "Extrae el ZIP, ve a chrome://extensions/, activa el Modo Desarrollador y carga la carpeta descomprimida.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -43,9 +43,9 @@ const steps = [
   },
   {
     number: "03",
-    title: "Browse Safely",
+    title: "Navega Seguro",
     description:
-      "That's it! Body Cart now runs in the background, analyzing pages and alerting you to potential threats automatically.",
+      "¡Eso es todo! Body Cart ahora funciona en segundo plano, analizando páginas y alertándote de amenazas potenciales automáticamente.",
     icon: (
       <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -67,12 +67,12 @@ export function HowItWorks() {
         <div className="text-center mb-16">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              How It Works
+              Cómo Funciona
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Get protected in under a minute with our simple 3-step setup
+              Protégete en menos de un minuto con nuestra configuración simple de 3 pasos
             </p>
           </ScrollReveal>
         </div>
@@ -89,7 +89,7 @@ export function HowItWorks() {
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-white/20 transition-colors">
                   {/* Step number badge */}
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-white rounded-full text-black font-bold text-sm">
-                    Step {step.number}
+                    Paso {step.number}
                   </div>
 
                   {/* Icon */}

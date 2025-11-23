@@ -76,7 +76,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-white/80 mb-12 max-w-xl mx-auto font-light">
-          AI-powered protection against scams and phishing while you shop online.
+          Protección con IA contra estafas y phishing mientras compras en línea.
         </p>
 
         <button
@@ -96,13 +96,13 @@ export function Hero() {
               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
             />
           </svg>
-          Download Extension
+          Descargar Extensión
         </button>
 
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-white/60">
-          <span>Free</span>
-          <span>No data collection</span>
-          <span>AI-powered</span>
+          <span>Gratis</span>
+          <span>Sin recolección de datos</span>
+          <span>Potenciado por IA</span>
         </div>
       </div>
 
@@ -119,8 +119,8 @@ export function Hero() {
               </svg>
             </button>
 
-            <h3 className="text-2xl font-semibold text-black mb-2">Install Body Cart</h3>
-            <p className="text-neutral-500 mb-8">Follow these steps to get protected</p>
+            <h3 className="text-2xl font-semibold text-black mb-2">Instalar Body Cart</h3>
+            <p className="text-neutral-500 mb-8">Sigue estos pasos para estar protegido</p>
 
             <div className="space-y-6">
               {/* Step 1 */}
@@ -129,7 +129,7 @@ export function Hero() {
                   1
                 </div>
                 <div className="flex-1">
-                  <p className="text-black font-medium mb-2">Download the extension</p>
+                  <p className="text-black font-medium mb-2">Descarga la extensión</p>
                   <a
                     href="/extension.zip"
                     download="body-cart-extension.zip"
@@ -138,7 +138,7 @@ export function Hero() {
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
-                    Download ZIP
+                    Descargar ZIP
                   </a>
                 </div>
               </div>
@@ -149,8 +149,8 @@ export function Hero() {
                   2
                 </div>
                 <div>
-                  <p className="text-black font-medium">Extract the ZIP file</p>
-                  <p className="text-neutral-500 text-sm">Unzip to a folder on your computer</p>
+                  <p className="text-black font-medium">Extrae el archivo ZIP</p>
+                  <p className="text-neutral-500 text-sm">Descomprime en una carpeta de tu computador</p>
                 </div>
               </div>
 
@@ -160,7 +160,7 @@ export function Hero() {
                   3
                 </div>
                 <div className="flex-1">
-                  <p className="text-black font-medium mb-2">Open Chrome Extensions</p>
+                  <p className="text-black font-medium mb-2">Abre las Extensiones de Chrome</p>
                   <div className="flex items-center gap-2">
                     <code className="flex-1 text-black bg-neutral-100 px-3 py-2 rounded-lg text-sm font-mono">
                       chrome://extensions/
@@ -173,7 +173,7 @@ export function Hero() {
                           : "bg-neutral-100 text-black hover:bg-neutral-200"
                       }`}
                     >
-                      {copied ? "Copied" : "Copy"}
+                      {copied ? "Copiado" : "Copiar"}
                     </button>
                   </div>
                 </div>
@@ -185,8 +185,8 @@ export function Hero() {
                   4
                 </div>
                 <div>
-                  <p className="text-black font-medium">Enable Developer Mode</p>
-                  <p className="text-neutral-500 text-sm">Toggle the switch in the top-right corner</p>
+                  <p className="text-black font-medium">Activa el Modo Desarrollador</p>
+                  <p className="text-neutral-500 text-sm">Activa el interruptor en la esquina superior derecha</p>
                 </div>
               </div>
 
@@ -196,15 +196,15 @@ export function Hero() {
                   5
                 </div>
                 <div>
-                  <p className="text-black font-medium">Load Unpacked</p>
-                  <p className="text-neutral-500 text-sm">Click &quot;Load unpacked&quot; and select the extracted folder</p>
+                  <p className="text-black font-medium">Cargar descomprimida</p>
+                  <p className="text-neutral-500 text-sm">Haz clic en &quot;Cargar descomprimida&quot; y selecciona la carpeta extraída</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 pt-6 border-t border-neutral-200">
               <p className="text-center text-neutral-500 text-sm">
-                You&apos;re all set. Body Cart is now protecting you.
+                ¡Listo! Body Cart ahora te está protegiendo.
               </p>
             </div>
           </div>
