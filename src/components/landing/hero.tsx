@@ -88,7 +88,7 @@ export function Hero() {
         </h1>
 
         <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-6 font-heading">
-          Compra sin miedo
+          Tu guardaespaldas digital
         </h2>
 
         <p className="text-lg md:text-xl text-white/80 mb-12 max-w-xl mx-auto font-light">
