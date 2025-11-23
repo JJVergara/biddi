@@ -1,76 +1,90 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { createClient } from '@/lib/supabase/client'
+import { useState } from "react";
+import { createClient } from "@/lib/supabase/client";
 
-type AuthMode = 'signin' | 'signup'
+type AuthMode = "signin" | "signup";
 
 export function AuthForm() {
-  const [mode, setMode] = useState<AuthMode>('signin')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [loading, setLoading] = useState(false)
-  const [message, setMessage] = useState<{ type: 'error' | 'success'; text: string } | null>(null)
+  const [mode, setMode] = useState<AuthMode>("signin");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<{
+    type: "error" | "success";
+    text: string;
+  } | null>(null);
 
-  const supabase = createClient()
+  const supabase = createClient();
 
   const handleEmailAuth = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setLoading(true)
-    setMessage(null)
+    e.preventDefault();
+    setLoading(true);
+    setMessage(null);
 
     try {
-      if (mode === 'signup') {
+      if (mode === "signup") {
         const { error } = await supabase.auth.signUp({
           email,
           password,
           options: {
             emailRedirectTo: `${window.location.origin}/auth/callback`,
           },
-        })
-        if (error) throw error
-        setMessage({ type: 'success', text: 'Check your email to confirm your account!' })
+        });
+        if (error) throw error;
+        setMessage({
+          type: "success",
+          text: "Check your email to confirm your account!",
+        });
       } else {
         const { error } = await supabase.auth.signInWithPassword({
           email,
           password,
-        })
-        if (error) throw error
-        window.location.href = '/dashboard'
+        });
+        if (error) throw error;
+        window.location.href = "/dashboard";
       }
     } catch (error) {
-      setMessage({ type: 'error', text: error instanceof Error ? error.message : 'An error occurred' })
+      setMessage({
+        type: "error",
+        text: error instanceof Error ? error.message : "An error occurred",
+      });
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   const handleGoogleAuth = async () => {
-    setLoading(true)
-    setMessage(null)
+    setLoading(true);
+    setMessage(null);
 
     try {
       const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'google',
+        provider: "google",
         options: {
           redirectTo: `${window.location.origin}/auth/callback`,
         },
-      })
-      if (error) throw error
+      });
+      if (error) throw error;
     } catch (error) {
-      setMessage({ type: 'error', text: error instanceof Error ? error.message : 'An error occurred' })
-      setLoading(false)
+      setMessage({
+        type: "error",
+        text: error instanceof Error ? error.message : "An error occurred",
+      });
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <div className="w-full max-w-md mx-auto">
       <div className="bg-white rounded-2xl p-8 shadow-xl border border-neutral-200">
         <h2 className="text-3xl font-bold text-black text-center mb-2">
-          {mode === 'signin' ? 'Welcome Back' : 'Create Account'}
+          {mode === "signin" ? "Welcome Back" : "Create Account"}
         </h2>
         <p className="text-neutral-500 text-center mb-8">
-          {mode === 'signin' ? 'Sign in to continue to BodyCart' : 'Sign up to get started with BodyCart'}
+          {mode === "signin"
+            ? "Sign in to continue to BodyCart"
+            : "Sign up to get started with BodyCart"}
         </p>
 
         {/* Google OAuth Button */}
@@ -105,14 +119,19 @@ export function AuthForm() {
             <div className="w-full border-t border-neutral-200"></div>
           </div>
           <div className="relative flex justify-center text-sm">
-            <span className="px-4 bg-white text-neutral-400">or continue with email</span>
+            <span className="px-4 bg-white text-neutral-400">
+              or continue with email
+            </span>
           </div>
         </div>
 
         {/* Email/Password Form */}
         <form onSubmit={handleEmailAuth} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-neutral-700 mb-2"
+            >
               Email
             </label>
             <input
@@ -127,7 +146,10 @@ export function AuthForm() {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-neutral-700 mb-2">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-neutral-700 mb-2"
+            >
               Password
             </label>
             <input
@@ -145,9 +167,9 @@ export function AuthForm() {
           {message && (
             <div
               className={`p-4 rounded-xl text-sm ${
-                message.type === 'error'
-                  ? 'bg-red-50 text-red-600 border border-red-200'
-                  : 'bg-green-50 text-green-600 border border-green-200'
+                message.type === "error"
+                  ? "bg-red-50 text-red-600 border border-red-200"
+                  : "bg-green-50 text-green-600 border border-green-200"
               }`}
             >
               {message.text}
@@ -179,27 +201,29 @@ export function AuthForm() {
                 </svg>
                 Processing...
               </span>
-            ) : mode === 'signin' ? (
-              'Sign In'
+            ) : mode === "signin" ? (
+              "Sign In"
             ) : (
-              'Sign Up'
+              "Sign Up"
             )}
           </button>
         </form>
 
         <p className="mt-6 text-center text-neutral-500">
-          {mode === 'signin' ? "Don't have an account? " : 'Already have an account? '}
+          {mode === "signin"
+            ? "Don't have an account? "
+            : "Already have an account? "}
           <button
             onClick={() => {
-              setMode(mode === 'signin' ? 'signup' : 'signin')
-              setMessage(null)
+              setMode(mode === "signin" ? "signup" : "signin");
+              setMessage(null);
             }}
             className="text-black hover:text-neutral-600 font-semibold transition-colors"
           >
-            {mode === 'signin' ? 'Sign Up' : 'Sign In'}
+            {mode === "signin" ? "Sign Up" : "Sign In"}
           </button>
         </p>
       </div>
     </div>
-  )
+  );
 }

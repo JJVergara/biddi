@@ -45,7 +45,8 @@ export function HowItWorks() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Protégete en menos de un minuto con nuestra configuración simple de 3 pasos
+              Protégete en menos de un minuto con nuestra configuración simple
+              de 3 pasos
             </p>
           </ScrollReveal>
         </div>
@@ -54,7 +55,10 @@ export function HowItWorks() {
         <div className="relative">
           {/* Connection line */}
 
-          <StaggerReveal className="grid lg:grid-cols-3 gap-8 lg:gap-12" stagger={0.15}>
+          <StaggerReveal
+            className="grid lg:grid-cols-3 gap-8 lg:gap-12"
+            stagger={0.15}
+          >
             {steps.map((step, index) => (
               <div key={index} className="relative pt-4">
                 {/* Step number badge - outside PixelCard to avoid overflow clip */}
@@ -77,7 +81,9 @@ export function HowItWorks() {
                     <h3 className="text-2xl font-semibold text-white mb-3 font-heading">
                       {step.title}
                     </h3>
-                    <p className="text-white/60 leading-relaxed">{step.description}</p>
+                    <p className="text-white/60 leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </PixelCard>
 

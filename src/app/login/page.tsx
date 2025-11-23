@@ -40,7 +40,9 @@ export default async function LoginPage() {
         {/* Footer */}
         <footer className="w-full px-6 py-6">
           <div className="max-w-7xl mx-auto text-center text-neutral-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} BodyCart. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} BodyCart. All rights reserved.
+            </p>
           </div>
         </footer>
       </div>

@@ -63,14 +63,17 @@ export function Features() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              BodyCart usa IA de última generación para mantenerte seguro de amenazas
-              en línea mientras compras
+              BodyCart usa IA de última generación para mantenerte seguro de
+              amenazas en línea mientras compras
             </p>
           </ScrollReveal>
         </div>
 
         {/* Features grid */}
-        <StaggerReveal className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" stagger={0.1}>
+        <StaggerReveal
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          stagger={0.1}
+        >
           {features.map((feature, index) => (
             <PixelCard
               key={index}
@@ -84,8 +87,12 @@ export function Features() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-white mb-2 font-heading">{feature.title}</h3>
-                <p className="text-white/60 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-2 font-heading">
+                  {feature.title}
+                </h3>
+                <p className="text-white/60 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             </PixelCard>
           ))}

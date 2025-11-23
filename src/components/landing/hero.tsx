@@ -56,7 +56,16 @@ export function Hero() {
       {/* Full-screen ColorBends background */}
       <ColorBends
         className="absolute! inset-0!"
-        style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', background: '#000' }}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          width: "100%",
+          height: "100%",
+          background: "#000",
+        }}
         colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
         rotation={30}
         speed={0.3}
@@ -70,7 +79,10 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div ref={contentRef} className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+      <div
+        ref={contentRef}
+        className="relative z-10 text-center px-6 max-w-3xl mx-auto"
+      >
         <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 font-heading">
           BodyCart
         </h1>
@@ -118,13 +130,27 @@ export function Hero() {
               onClick={() => setShowInstructions(false)}
               className="absolute top-4 right-4 text-neutral-400 hover:text-black transition-colors"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 
-            <h3 className="text-2xl font-semibold text-black mb-2">Instalar BodyCart</h3>
-            <p className="text-neutral-500 mb-8">Sigue estos pasos para estar protegido</p>
+            <h3 className="text-2xl font-semibold text-black mb-2">
+              Instalar BodyCart
+            </h3>
+            <p className="text-neutral-500 mb-8">
+              Sigue estos pasos para estar protegido
+            </p>
 
             <div className="space-y-6">
               {/* Step 1 */}
@@ -133,14 +159,26 @@ export function Hero() {
                   1
                 </div>
                 <div className="flex-1">
-                  <p className="text-black font-medium mb-2">Descarga la extensión</p>
+                  <p className="text-black font-medium mb-2">
+                    Descarga la extensión
+                  </p>
                   <a
                     href="/extension.zip"
                     download="body-cart-extension.zip"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-neutral-800 transition-colors"
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
                     </svg>
                     Descargar ZIP
                   </a>
@@ -153,8 +191,12 @@ export function Hero() {
                   2
                 </div>
                 <div>
-                  <p className="text-black font-medium">Extrae el archivo ZIP</p>
-                  <p className="text-neutral-500 text-sm">Descomprime en una carpeta de tu computador</p>
+                  <p className="text-black font-medium">
+                    Extrae el archivo ZIP
+                  </p>
+                  <p className="text-neutral-500 text-sm">
+                    Descomprime en una carpeta de tu computador
+                  </p>
                 </div>
               </div>
 
@@ -164,7 +206,9 @@ export function Hero() {
                   3
                 </div>
                 <div className="flex-1">
-                  <p className="text-black font-medium mb-2">Abre las Extensiones de Chrome</p>
+                  <p className="text-black font-medium mb-2">
+                    Abre las Extensiones de Chrome
+                  </p>
                   <div className="flex items-center gap-2">
                     <code className="flex-1 text-black bg-neutral-100 px-3 py-2 rounded-lg text-sm font-mono">
                       chrome://extensions/
@@ -189,8 +233,12 @@ export function Hero() {
                   4
                 </div>
                 <div>
-                  <p className="text-black font-medium">Activa el Modo Desarrollador</p>
-                  <p className="text-neutral-500 text-sm">Activa el interruptor en la esquina superior derecha</p>
+                  <p className="text-black font-medium">
+                    Activa el Modo Desarrollador
+                  </p>
+                  <p className="text-neutral-500 text-sm">
+                    Activa el interruptor en la esquina superior derecha
+                  </p>
                 </div>
               </div>
 
@@ -201,7 +249,10 @@ export function Hero() {
                 </div>
                 <div>
                   <p className="text-black font-medium">Cargar descomprimida</p>
-                  <p className="text-neutral-500 text-sm">Haz clic en &quot;Cargar descomprimida&quot; y selecciona la carpeta extraída</p>
+                  <p className="text-neutral-500 text-sm">
+                    Haz clic en &quot;Cargar descomprimida&quot; y selecciona la
+                    carpeta extraída
+                  </p>
                 </div>
               </div>
             </div>

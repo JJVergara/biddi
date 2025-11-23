@@ -62,7 +62,9 @@ export function ScrollReveal({
       scrollTrigger: {
         trigger: element,
         start: triggerStart,
-        toggleActions: once ? "play none none none" : "play reverse play reverse",
+        toggleActions: once
+          ? "play none none none"
+          : "play reverse play reverse",
       },
     });
 
@@ -191,7 +193,7 @@ export function TextReveal({
     element.innerHTML = parts
       .map(
         (part, i) =>
-          `<span class="inline-block overflow-hidden"><span class="reveal-text inline-block">${part}${type === "words" && i < parts.length - 1 ? "&nbsp;" : ""}</span></span>`
+          `<span class="inline-block overflow-hidden"><span class="reveal-text inline-block">${part}${type === "words" && i < parts.length - 1 ? "&nbsp;" : ""}</span></span>`,
       )
       .join("");
 
