@@ -20,9 +20,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "BodyCart - Tu Guardaespaldas Digital para Compras en Línea",
+  title: "Simba Tech - Fábrica de Software",
   description:
-    "Extensión de Chrome potenciada por IA que te protege de estafas, intentos de phishing y sitios web sospechosos en tiempo real.",
+    "Desarrollamos software personalizado, aplicaciones web, móviles y soluciones de IA/ML que transforman tu negocio.",
 };
 
 export default function RootLayout({

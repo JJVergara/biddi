@@ -5,39 +5,39 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 
 const faqs = [
   {
-    question: "¿Cómo me protege BodyCart?",
+    question: "¿Qué tipos de proyectos desarrolla Simba Tech?",
     answer:
-      "BodyCart utiliza modelos avanzados de IA entrenados con miles de patrones de estafas conocidas, intentos de phishing y sitios web fraudulentos. Analiza continuamente las páginas que visitas en tiempo real, buscando elementos sospechosos como formularios de pago falsos, precios engañosos, señales de alerta de vendedores en marketplaces y dominios maliciosos conocidos. Cuando se detecta una amenaza, recibes una notificación instantánea con detalles sobre el riesgo.",
+      "Desarrollamos aplicaciones web y móviles personalizadas, sistemas empresariales, e-commerce, plataformas SaaS, soluciones de IA/ML, APIs, integraciones y mucho más. Trabajamos con startups, PyMEs y empresas grandes en diversos sectores como retail, salud, finanzas, logística y educación.",
   },
   {
-    question: "¿Están seguros mis datos con BodyCart?",
+    question: "¿Cómo es el proceso de trabajo?",
     answer:
-      "Absolutamente. BodyCart está diseñado con la privacidad como prioridad principal. Todo el análisis ocurre localmente en tu navegador - tus datos de navegación nunca salen de tu dispositivo. No recopilamos, almacenamos ni transmitimos ninguna información personal, historial de navegación o contenido de las páginas que visitas. La extensión solo necesita permisos mínimos para funcionar.",
+      "Comenzamos con una consulta de descubrimiento donde entendemos tus necesidades. Luego creamos una propuesta detallada con arquitectura, tecnologías, cronograma y presupuesto. Una vez aprobado, trabajamos en sprints ágiles de 2 semanas con entregas incrementales, demos regulares y comunicación constante hasta el lanzamiento y más allá.",
   },
   {
-    question: "¿Qué tipos de estafas puede detectar BodyCart?",
+    question: "¿Qué tecnologías usan?",
     answer:
-      "BodyCart puede identificar una amplia gama de amenazas en línea incluyendo: estafas en Facebook Marketplace (vendedores falsos, precios demasiado buenos para ser verdad, cuentas sospechosas), sitios web de phishing que intentan robar credenciales, sitios de comercio electrónico falsos, listados de productos falsificados, fraude en formularios de pago y dominios maliciosos conocidos. Nuestros modelos de IA se actualizan continuamente para detectar nuevos patrones de estafa.",
+      "Trabajamos con tecnologías modernas y probadas: React, Next.js, Node.js, Python, TypeScript para desarrollo web; React Native y Flutter para móviles; PostgreSQL, MongoDB para bases de datos; AWS, Google Cloud para infraestructura; TensorFlow, PyTorch para IA/ML. Seleccionamos el stack ideal para cada proyecto.",
   },
   {
-    question: "¿Cómo instalo la extensión?",
+    question: "¿Cuánto tiempo toma un proyecto?",
     answer:
-      "Instalar BodyCart es simple: 1) Descarga el archivo ZIP desde esta página, 2) Extrae/descomprime el archivo en una carpeta de tu computador, 3) Abre Chrome y ve a chrome://extensions/, 4) Activa el 'Modo desarrollador' en la esquina superior derecha, 5) Haz clic en 'Cargar descomprimida' y selecciona la carpeta extraída. ¡Eso es todo! BodyCart ahora te protegerá mientras navegas.",
+      "Depende del alcance y complejidad. Un MVP puede estar listo en 6-8 semanas, mientras que aplicaciones empresariales complejas pueden tomar varios meses. Durante la fase de planificación, te damos un cronograma detallado con hitos claros y fechas de entrega específicas.",
   },
   {
-    question: "¿BodyCart es realmente gratis?",
+    question: "¿Cuánto cuesta desarrollar software personalizado?",
     answer:
-      "Sí, BodyCart es completamente gratis sin costos ocultos, niveles premium ni compras dentro de la aplicación. Creemos que todos merecen protección contra estafas en línea. La extensión se desarrolla como un proyecto de código abierto enfocado en hacer internet más seguro para todos.",
+      "Cada proyecto es único. Los costos dependen de complejidad, funcionalidades, integraciones y tecnologías. Ofrecemos presupuestos transparentes sin costos ocultos. Tras entender tus necesidades en la consulta inicial, te presentamos opciones con diferentes alcances para ajustarnos a tu presupuesto.",
   },
   {
-    question: "¿BodyCart ralentiza mi navegador?",
+    question: "¿Ofrecen soporte después del lanzamiento?",
     answer:
-      "No. BodyCart está optimizado para el rendimiento y funciona eficientemente en segundo plano. El análisis de IA es ligero y ocurre de forma asíncrona, por lo que no afectará la velocidad de navegación ni los tiempos de carga de páginas. La mayoría de los usuarios no notan ningún impacto en el rendimiento.",
+      "Sí, ofrecemos planes de mantenimiento y soporte continuo que incluyen actualizaciones, corrección de bugs, monitoreo de performance, backups, seguridad y nuevas funcionalidades. También ofrecemos capacitación para tu equipo y documentación completa del sistema.",
   },
   {
-    question: "¿Qué navegadores soporta BodyCart?",
+    question: "¿Trabajan con clientes internacionales?",
     answer:
-      "Actualmente, BodyCart está disponible como extensión de Chrome, que también funciona en navegadores basados en Chromium como Microsoft Edge, Brave, Opera y Vivaldi. Las versiones para Firefox y Safari se están considerando para futuras versiones según la demanda de los usuarios.",
+      "Absolutamente. Hemos trabajado con clientes en América, Europa y Asia. Nuestro equipo está acostumbrado a colaboración remota con diferentes zonas horarias. Nos comunicamos en español e inglés y usamos herramientas modernas de gestión de proyectos para mantener todo sincronizado.",
   },
 ];
 
@@ -60,7 +60,7 @@ export function FAQ() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60">
-              Todo lo que necesitas saber sobre BodyCart
+              Todo lo que necesitas saber sobre Simba Tech
             </p>
           </ScrollReveal>
         </div>
@@ -120,7 +120,7 @@ export function FAQ() {
           <div className="mt-12 text-center">
             <p className="text-white/60 mb-4">¿Aún tienes preguntas?</p>
             <a
-              href="mailto:support@bodycart.app"
+              href="mailto:contacto@simbatech.com"
               className="inline-flex items-center gap-2 text-white hover:text-white/80 transition-colors"
             >
               <svg

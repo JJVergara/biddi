@@ -9,17 +9,17 @@ export function Navbar() {
       logo={
         <Image
           src="/logo_cropped_white.png"
-          alt="BodyCart"
+          alt="Simba Tech"
           width={32}
           height={32}
           className="h-8 w-auto"
         />
       }
       items={[
-        { label: "Características", href: "#features" },
-        { label: "Cómo Funciona", href: "#how-it-works" },
-        { label: "Demos", href: "#demos" },
-        { label: "Preguntas", href: "#faq" },
+        { label: "Servicios", href: "/services" },
+        { label: "Portafolio", href: "/portfolio" },
+        { label: "Sobre Nosotros", href: "/about" },
+        { label: "Contacto", href: "/contact" },
       ]}
       baseColor="#ffffff"
       pillColor="#000000"

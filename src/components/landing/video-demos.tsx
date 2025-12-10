@@ -5,23 +5,23 @@ import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 const videos = [
   {
     id: "placeholder-1",
-    title: "Primeros Pasos con BodyCart",
+    title: "Plataforma E-commerce para Retail",
     description:
-      "Aprende cómo instalar y configurar BodyCart en menos de un minuto.",
+      "Transformamos la experiencia de compra online con una solución personalizada que aumentó las conversiones en 45%.",
     thumbnail: null,
   },
   {
     id: "placeholder-2",
-    title: "Detectando Estafas en Marketplace",
+    title: "App Móvil de Logística",
     description:
-      "Mira cómo BodyCart identifica publicaciones sospechosas en Facebook Marketplace.",
+      "Desarrollamos una aplicación que optimiza rutas de entrega en tiempo real, reduciendo costos operativos en 30%.",
     thumbnail: null,
   },
   {
     id: "placeholder-3",
-    title: "Protección en Acción",
+    title: "Sistema de IA para Healthcare",
     description:
-      "Observa cómo BodyCart te protege de intentos de phishing en tiempo real.",
+      "Implementamos ML para diagnóstico asistido, mejorando la precisión y reduciendo tiempos de análisis.",
     thumbnail: null,
   },
 ];
@@ -34,12 +34,12 @@ export function VideoDemos() {
         <div className="text-center mb-16">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              Míralo en Acción
+              Proyectos Destacados
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Observa cómo BodyCart te protege mientras compras en línea
+              Conoce cómo hemos ayudado a nuestros clientes a alcanzar sus objetivos
             </p>
           </ScrollReveal>
         </div>
@@ -67,7 +67,7 @@ export function VideoDemos() {
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
-                  <p className="text-white/40 text-sm">Video próximamente</p>
+                  <p className="text-white/40 text-sm">Caso de estudio</p>
                 </div>
 
                 {/* Gradient overlay on hover */}
@@ -87,26 +87,17 @@ export function VideoDemos() {
           ))}
         </StaggerReveal>
 
-        {/* Subscribe CTA */}
+        {/* Portfolio CTA */}
         <ScrollReveal delay={0.3}>
           <div className="mt-12 text-center">
             <p className="text-white/60 mb-4">
-              Suscríbete a nuestro canal para más tutoriales y actualizaciones
+              ¿Quieres ver más de nuestro trabajo?
             </p>
             <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/20 rounded-xl text-white hover:border-white/30 hover:bg-white/20 transition-colors"
+              href="/portfolio"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-all"
             >
-              <svg
-                className="w-5 h-5 text-red-500"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-              </svg>
-              Canal de YouTube
+              Ver Más Proyectos
             </a>
           </div>
         </ScrollReveal>

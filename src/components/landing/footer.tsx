@@ -11,35 +11,35 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Brand */}
             <div className="flex items-center gap-3">
-              <span className="text-xl font-bold text-white">BodyCart</span>
+              <span className="text-xl font-bold text-white">Simba Tech</span>
             </div>
 
             {/* Navigation */}
             <nav className="flex flex-wrap items-center justify-center gap-6 text-sm">
-              <a
-                href="#features"
+              <Link
+                href="/services"
                 className="text-white/60 hover:text-white transition-colors"
               >
-                Características
-              </a>
-              <a
-                href="#how-it-works"
+                Servicios
+              </Link>
+              <Link
+                href="/portfolio"
                 className="text-white/60 hover:text-white transition-colors"
               >
-                Cómo Funciona
-              </a>
-              <a
-                href="#demos"
+                Portafolio
+              </Link>
+              <Link
+                href="/about"
                 className="text-white/60 hover:text-white transition-colors"
               >
-                Demos
-              </a>
-              <a
-                href="#faq"
+                Sobre Nosotros
+              </Link>
+              <Link
+                href="/contact"
                 className="text-white/60 hover:text-white transition-colors"
               >
-                Preguntas
-              </a>
+                Contacto
+              </Link>
               <Link
                 href="/login"
                 className="text-white/60 hover:text-white transition-colors"
@@ -92,10 +92,10 @@ export function Footer() {
         <ScrollReveal delay={0.1}>
           <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
             <p>
-              &copy; {new Date().getFullYear()} BodyCart. Todos los derechos
+              &copy; {new Date().getFullYear()} Simba Tech. Todos los derechos
               reservados.
             </p>
-            <p>Hecho para un internet más seguro</p>
+            <p>Construyendo el futuro del software</p>
           </div>
         </ScrollReveal>
       </div>

@@ -3,32 +3,32 @@
 import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 import PixelCard from "@/components/PixelCard";
 import {
-  DownloadSimple,
-  GearSix,
-  ShieldCheckered,
+  ChatCircle,
+  FileText,
+  Rocket,
 } from "@phosphor-icons/react";
 
 const steps = [
   {
     number: "01",
-    title: "Descarga la Extensión",
+    title: "Descubrimiento",
     description:
-      "Haz clic en el botón de descarga para obtener el archivo ZIP de BodyCart. Es completamente gratis sin costos ocultos.",
-    icon: <DownloadSimple size={40} weight="bold" />,
+      "Conversamos sobre tu visión, necesidades y objetivos de negocio en una consulta inicial sin compromiso.",
+    icon: <ChatCircle size={40} weight="bold" />,
   },
   {
     number: "02",
-    title: "Instala en Chrome",
+    title: "Planificación",
     description:
-      "Extrae el ZIP, ve a chrome://extensions/, activa el Modo Desarrollador y carga la carpeta descomprimida.",
-    icon: <GearSix size={40} weight="bold" />,
+      "Diseñamos la solución perfecta con arquitectura detallada, cronograma y presupuesto transparente.",
+    icon: <FileText size={40} weight="bold" />,
   },
   {
     number: "03",
-    title: "Navega Seguro",
+    title: "Desarrollo y Entrega",
     description:
-      "¡Eso es todo! BodyCart ahora funciona en segundo plano, analizando páginas y alertándote de amenazas potenciales automáticamente.",
-    icon: <ShieldCheckered size={40} weight="bold" />,
+      "Construimos tu software con metodologías ágiles, entregas iterativas y comunicación constante hasta el lanzamiento.",
+    icon: <Rocket size={40} weight="bold" />,
   },
 ];
 
@@ -40,13 +40,12 @@ export function HowItWorks() {
         <div className="text-center mb-16">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              Cómo Funciona
+              Cómo Trabajamos
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Protégete en menos de un minuto con nuestra configuración simple
-              de 3 pasos
+              Un proceso probado que garantiza resultados excepcionales
             </p>
           </ScrollReveal>
         </div>

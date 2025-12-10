@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository
 
+## Project: Simba Tech - Software Factory Website
+
 ## Commands
 
 ### Development
@@ -19,6 +21,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
+Simba Tech is a software factory website showcasing services, portfolio, team, and contact information.
+
 ### Technology Stack
 
 - **Framework**: Next.js 16 with React 19 (App Router)
@@ -26,33 +30,35 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Styling**: TailwindCSS v4
 - **State Management**: React Query (to be added)
 - **Backend/Auth**: Supabase
-- **UI Components**: Radix UI + custom shadcn/ui components (to be added)
+- **UI Components**: Radix UI + custom shadcn/ui components (Phosphor Icons, PixelCard, ColorBends)
+- **Animations**: GSAP
 
 ### Project Structure
 
 ```
-biddi/
+simba-tech/
 ├── src/
 │   ├── app/              # Next.js App Router
-│   │   ├── api/          # API route handlers
-│   │   ├── (auth)/       # Authenticated routes group
-│   │   └── (public)/     # Public routes group
+│   │   ├── /             # Homepage (landing page)
+│   │   ├── /services     # Services page
+│   │   ├── /portfolio    # Portfolio/case studies page
+│   │   ├── /about        # About/team page
+│   │   ├── /contact      # Contact page
+│   │   ├── /login        # Login page (Supabase auth)
+│   │   ├── /dashboard    # User dashboard (authenticated)
+│   │   └── api/          # API route handlers
 │   ├── components/       # React components
-│   │   ├── shared/       # Shared components across features
-│   │   ├── ui/           # Base UI components (shadcn/ui)
-│   │   └── [features]/   # Feature-specific components
+│   │   ├── landing/      # Landing page components
+│   │   │   ├── hero.tsx, features.tsx, how-it-works.tsx
+│   │   │   ├── video-demos.tsx, faq.tsx, footer.tsx, navbar.tsx
+│   │   ├── ui/           # UI primitives (ColorBends, ScrollReveal, PixelCard)
+│   │   ├── auth/         # Authentication components
+│   │   └── shared/       # Shared components
 │   ├── lib/              # Core business logic
-│   │   ├── supabase/     # Supabase client and utilities
-│   │   └── [modules]/    # Domain modules following this pattern:
-│   │       ├── commands/ # Write operations
-│   │       ├── queries/  # Read operations
-│   │       ├── services/ # Business logic
-│   │       ├── entities/ # Type definitions
-│   │       ├── utils/    # Helper functions
-│   │       └── constants/# Module constants
+│   │   └── supabase/     # Supabase client and utilities
 │   ├── hooks/            # Custom React hooks
 │   └── types/            # Shared TypeScript type definitions
-├── public/               # Static assets
+├── public/               # Static assets (logos, images)
 └── .env.local            # Environment variables (not committed)
 ```
 

@@ -6,7 +6,6 @@ import ColorBends from "@/components/ui/color-bends";
 
 export function Hero() {
   const [showInstructions, setShowInstructions] = useState(false);
-  const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -30,25 +29,8 @@ export function Hero() {
     });
   }, []);
 
-  const handleDownload = () => {
+  const handleConsultation = () => {
     setShowInstructions(true);
-  };
-
-  const copyExtensionUrl = async () => {
-    try {
-      await navigator.clipboard.writeText("chrome://extensions/");
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      const textArea = document.createElement("textarea");
-      textArea.value = "chrome://extensions/";
-      document.body.appendChild(textArea);
-      textArea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textArea);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
   };
 
   return (
@@ -84,19 +66,19 @@ export function Hero() {
         className="relative z-10 text-center px-6 max-w-3xl mx-auto"
       >
         <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 font-heading">
-          BodyCart
+          Simba Tech
         </h1>
 
         <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-6 font-heading">
-          Tu guardaespaldas digital
+          Construyendo el futuro del software
         </h2>
 
         <p className="text-lg md:text-xl text-white/80 mb-12 max-w-xl mx-auto font-light">
-          Protección con IA contra estafas y phishing mientras compras en línea.
+          Desarrollamos software personalizado, aplicaciones web, móviles y soluciones de IA/ML que transforman tu negocio.
         </p>
 
         <button
-          onClick={handleDownload}
+          onClick={handleConsultation}
           className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-all duration-200"
         >
           <svg
@@ -109,23 +91,23 @@ export function Hero() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-          Descargar Extensión
+          Agendar Consulta
         </button>
 
         <div className="mt-16 flex flex-wrap justify-center gap-8 text-sm text-white/60">
-          <span>Gratis</span>
-          <span>Sin recolección de datos</span>
-          <span>Potenciado por IA</span>
+          <span>10+ años de experiencia</span>
+          <span>Clientes en 3 continentes</span>
+          <span>Tecnología de punta</span>
         </div>
       </div>
 
-      {/* Installation Instructions Modal */}
+      {/* Consultation Form Modal */}
       {showInstructions && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="bg-white rounded-2xl p-8 max-w-lg w-full shadow-2xl relative">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl relative">
             <button
               onClick={() => setShowInstructions(false)}
               className="absolute top-4 right-4 text-neutral-400 hover:text-black transition-colors"
@@ -146,122 +128,50 @@ export function Hero() {
             </button>
 
             <h3 className="text-2xl font-semibold text-black mb-2">
-              Instalar BodyCart
+              Agenda una Consulta
             </h3>
-            <p className="text-neutral-500 mb-8">
-              Sigue estos pasos para estar protegido
+            <p className="text-neutral-500 mb-6">
+              Conversemos sobre tu proyecto. Te contactaremos en menos de 24 horas.
             </p>
 
-            <div className="space-y-6">
-              {/* Step 1 */}
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-sm font-medium shrink-0">
-                  1
-                </div>
-                <div className="flex-1">
-                  <p className="text-black font-medium mb-2">
-                    Descarga la extensión
-                  </p>
-                  <a
-                    href="/extension.zip"
-                    download="body-cart-extension.zip"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-neutral-800 transition-colors"
-                  >
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                      />
-                    </svg>
-                    Descargar ZIP
-                  </a>
-                </div>
-              </div>
+            <form className="space-y-4">
+              <input
+                type="text"
+                placeholder="Nombre"
+                className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:border-black"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:border-black"
+              />
+              <input
+                type="text"
+                placeholder="Empresa (opcional)"
+                className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:border-black"
+              />
+              <textarea
+                placeholder="Cuéntanos sobre tu proyecto..."
+                rows={4}
+                className="w-full px-4 py-3 rounded-lg border border-neutral-200 focus:outline-none focus:border-black resize-none"
+              />
+              <button
+                type="submit"
+                className="w-full py-3 bg-black text-white font-medium rounded-lg hover:bg-neutral-800 transition-colors"
+              >
+                Enviar Solicitud
+              </button>
+            </form>
 
-              {/* Step 2 */}
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-neutral-200 rounded-full flex items-center justify-center text-black text-sm font-medium shrink-0">
-                  2
-                </div>
-                <div>
-                  <p className="text-black font-medium">
-                    Extrae el archivo ZIP
-                  </p>
-                  <p className="text-neutral-500 text-sm">
-                    Descomprime en una carpeta de tu computador
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-neutral-200 rounded-full flex items-center justify-center text-black text-sm font-medium shrink-0">
-                  3
-                </div>
-                <div className="flex-1">
-                  <p className="text-black font-medium mb-2">
-                    Abre las Extensiones de Chrome
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <code className="flex-1 text-black bg-neutral-100 px-3 py-2 rounded-lg text-sm font-mono">
-                      chrome://extensions/
-                    </code>
-                    <button
-                      onClick={copyExtensionUrl}
-                      className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                        copied
-                          ? "bg-black text-white"
-                          : "bg-neutral-100 text-black hover:bg-neutral-200"
-                      }`}
-                    >
-                      {copied ? "Copiado" : "Copiar"}
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-neutral-200 rounded-full flex items-center justify-center text-black text-sm font-medium shrink-0">
-                  4
-                </div>
-                <div>
-                  <p className="text-black font-medium">
-                    Activa el Modo Desarrollador
-                  </p>
-                  <p className="text-neutral-500 text-sm">
-                    Activa el interruptor en la esquina superior derecha
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 5 */}
-              <div className="flex gap-4">
-                <div className="w-8 h-8 bg-neutral-200 rounded-full flex items-center justify-center text-black text-sm font-medium shrink-0">
-                  5
-                </div>
-                <div>
-                  <p className="text-black font-medium">Cargar descomprimida</p>
-                  <p className="text-neutral-500 text-sm">
-                    Haz clic en &quot;Cargar descomprimida&quot; y selecciona la
-                    carpeta extraída
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-neutral-200">
-              <p className="text-center text-neutral-500 text-sm">
-                ¡Listo! BodyCart ahora te está protegiendo.
-              </p>
-            </div>
+            <p className="mt-4 text-center text-neutral-500 text-sm">
+              También puedes escribirnos a{" "}
+              <a
+                href="mailto:contacto@simbatech.com"
+                className="text-black underline"
+              >
+                contacto@simbatech.com
+              </a>
+            </p>
           </div>
         </div>
       )}

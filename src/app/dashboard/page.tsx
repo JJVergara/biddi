@@ -21,7 +21,7 @@ export default async function Dashboard() {
             <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/25">
               <span className="text-white font-bold text-xl">B</span>
             </div>
-            <span className="text-2xl font-bold text-white">Biddi</span>
+            <span className="text-2xl font-bold text-white">Simba Tech</span>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-3">
@@ -128,7 +128,7 @@ export default async function Dashboard() {
             Hello, {user.email?.split("@")[0]}!
           </h2>
           <p className="text-gray-300 mb-6">
-            You&apos;ve successfully signed in to Biddi. This is your personal
+            You&apos;ve successfully signed in to Simba Tech. This is your personal
             dashboard where you can manage your account and explore all the
             features we have to offer.
           </p>

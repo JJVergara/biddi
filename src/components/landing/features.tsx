@@ -3,50 +3,50 @@
 import { ScrollReveal, StaggerReveal } from "@/components/ui/scroll-reveal";
 import PixelCard from "@/components/PixelCard";
 import {
-  ShieldCheck,
-  MagnifyingGlass,
-  FishSimple,
+  Code,
+  DeviceMobile,
   Brain,
-  SealCheck,
-  BellRinging,
+  Users,
+  Plugs,
+  Wrench,
 } from "@phosphor-icons/react";
 
 const features = [
   {
-    icon: <ShieldCheck size={32} weight="bold" />,
-    title: "Detección de Estafas en Marketplace",
+    icon: <Code size={32} weight="bold" />,
+    title: "Desarrollo Web",
     description:
-      "Análisis en tiempo real de publicaciones en Facebook Marketplace para identificar posibles estafas, vendedores falsos y patrones de precios sospechosos.",
+      "Aplicaciones web modernas y escalables con las últimas tecnologías. React, Next.js, Node.js y más.",
   },
   {
-    icon: <MagnifyingGlass size={32} weight="bold" />,
-    title: "Alertas de Sitios Sospechosos",
+    icon: <DeviceMobile size={32} weight="bold" />,
+    title: "Aplicaciones Móviles",
     description:
-      "Advertencias instantáneas cuando visitas sitios web potencialmente peligrosos, incluyendo tiendas falsas y sitios de comercio electrónico fraudulentos.",
-  },
-  {
-    icon: <FishSimple size={32} weight="bold" />,
-    title: "Protección contra Phishing",
-    description:
-      "Detección avanzada con IA de intentos de phishing en correos, mensajes y sitios web que intentan robar tu información personal.",
+      "Apps nativas y multiplataforma para iOS y Android que tus usuarios amarán usar.",
   },
   {
     icon: <Brain size={32} weight="bold" />,
-    title: "Análisis con IA",
+    title: "Inteligencia Artificial",
     description:
-      "Modelos de machine learning entrenados con miles de patrones de estafa proporcionan protección inteligente y contextual.",
+      "Soluciones de IA y ML que automatizan procesos y generan insights de valor.",
   },
   {
-    icon: <SealCheck size={32} weight="bold" />,
-    title: "Verificación de Pago Seguro",
+    icon: <Users size={32} weight="bold" />,
+    title: "Consultoría Técnica",
     description:
-      "Verifica la legitimidad de las páginas de pago y formularios antes de que ingreses información financiera sensible.",
+      "Asesoría experta en arquitectura, stack tecnológico y mejores prácticas de desarrollo.",
   },
   {
-    icon: <BellRinging size={32} weight="bold" />,
-    title: "Notificaciones Instantáneas",
+    icon: <Plugs size={32} weight="bold" />,
+    title: "Integración de Sistemas",
     description:
-      "Recibe alertas inmediatas cuando se detectan amenazas potenciales, con explicaciones claras y acciones recomendadas.",
+      "Conectamos tus plataformas y sistemas para que trabajen en armonía perfecta.",
+  },
+  {
+    icon: <Wrench size={32} weight="bold" />,
+    title: "Mantenimiento y Soporte",
+    description:
+      "Mantenemos tu software actualizado, seguro y funcionando óptimamente 24/7.",
   },
 ];
 
@@ -58,13 +58,12 @@ export function Features() {
         <div className="text-center mb-16">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-heading">
-              Protección Poderosa
+              Nuestros Servicios
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              BodyCart usa IA de última generación para mantenerte seguro de
-              amenazas en línea mientras compras
+              Soluciones de software personalizadas que impulsan la innovación y el crecimiento de tu negocio
             </p>
           </ScrollReveal>
         </div>
